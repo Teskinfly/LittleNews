@@ -1,0 +1,49 @@
+<view class="container">
+    <view class="head">
+        <image src="{{title.img}}"/>
+        <view class="title">
+                <view class="discuss">话题:#{{title.title}}#</view>
+                <view class="content">
+                    <text >简介：{{title.content}}</text>
+                </view>
+                <view class="data">
+                    <text >讨论数：{{title.discussNum}}</text>
+                </view>
+        </view>
+    </view>
+    <view class = "myDiscuss">
+        <form bindsubmit="submitForm">
+            <input 
+                type="text" 
+                placeholder="来留言(1-20个字)" 
+                maxlength="20"
+                name='content'
+            />
+            <button form-type="submit" type="primary">发送</button>
+        </form>
+    </view>
+    <view class="views" wx:for="{{views}}" wx:key="views{{index}}">
+        <view class="view">
+            <view class="userInfo">
+                <image src="{{item.img}}" />
+                <view class="data">
+                    <view class="name">{{item.username}}</view>
+                    <view class="date">{{item.addDay}}</view>
+                </view>
+            </view>
+            <view class='comment'>
+                <view class="content">{{item.content}}</view>
+                <!-- <view class="gob">
+                    <view class="judge">
+                        <image src= "/images/hot/like.png"></image>
+                        <text >{{item.like}}</text>
+                    </view>
+                    <view class="judge">
+                        <image  src="/images/hot/cai.png"></image>
+                        <text >{{item.cai}}</text>
+                    </view>
+                </view>         -->
+            </view>
+        </view>
+    </view>
+</view>

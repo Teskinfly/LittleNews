@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.teskinfly.littlenewskr.mapper.MenuMapper">
+    <resultMap id="menuMap" type="com.teskinfly.littlenewskr.domain.Menu">
+        <id column="mid" property="menuId"></id>
+        <result column="mname" property="menuName"></result>
+        <result column="murl" property="menuUrl"></result>
+    </resultMap>
+    <select id="findAll" resultMap="menuMap">
+        select * from menu;
+    </select>
+    <insert id="insert" parameterType="com.teskinfly.littlenewskr.domain.Menu">
+        insert into menu (mid,mname,murl)values (#{menuId},#{menuName},#{menuUrl})
+    </insert>
+    <delete id="delAll">
+        delete from menu where 1=1
+    </delete>
+</mapper>

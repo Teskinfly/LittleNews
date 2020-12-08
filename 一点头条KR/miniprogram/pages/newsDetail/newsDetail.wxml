@@ -1,0 +1,14 @@
+<view class="container">
+    <view class="title">{{news.title}}</view>
+    <view class="img">
+        <image src="{{news.poster}}"></image>
+    </view>
+    <view class="content">
+        {{news.content}}
+    </view>
+    <view class="date">
+        时间：{{news.addDate}}
+    </view>
+    <button wx:if="{{isAdd}}" bindtap="cancelFavorite" class="treasure">已收藏</button>
+    <button wx:else bindtap="addFavorite">点击收藏</button>
+</view>

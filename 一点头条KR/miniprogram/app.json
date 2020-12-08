@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/videoShow/videoShow",
+    "pages/my/my",
+    "pages/newsDetail/newsDetail",
+    "pages/hot/hot",
+    "pages/newDiscuss/newDiscuss",
+    "pages/allDiscuss/allDiscuss",
+    "pages/discussDetail/discussDetail",
+    "pages/comment/comment",
+    "pages/treasure/treasure",
+    "pages/kefu/kefu",
+    "pages/about/about",
+    "pages/test/test"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#328EEB",
+    "navigationBarTitleText": "一点头条"
+  },
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#328EEB",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "新闻",
+        "iconPath": "./images/news.png",
+        "selectedIconPath": "./images/news_blue.png"
+      },
+      {
+        "pagePath": "pages/videoShow/videoShow",
+        "text": "视频",
+        "iconPath": "./images/video.png",
+        "selectedIconPath": "./images/video_blue.png"
+      },
+      {
+        "pagePath": "pages/hot/hot",
+        "text": "热榜",
+        "iconPath": "./images/hot.png",
+        "selectedIconPath": "./images/hot_blue.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "./images/my.png",
+        "selectedIconPath": "./images/my_blue.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap69.json"
+}

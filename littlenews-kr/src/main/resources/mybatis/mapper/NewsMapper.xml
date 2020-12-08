@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.teskinfly.littlenewskr.mapper.NewsMapper">
+    <resultMap id="newsMap" type="com.teskinfly.littlenewskr.domain.News">
+        <id column="newsid" property="newsId"></id>
+        <result column="menuid" property="menuId"></result>
+        <result column="poster" property="poster"></result>
+        <result column="title" property="title"></result>
+        <result column="content" property="content"></result>
+        <result column="add_date" property="addDate"></result>
+    </resultMap>
+    <select id="findByMId" resultMap="newsMap">
+        select menuid, poster, title, newsid from news where menuid = #{mId} order by newsid desc limit #{page},#{size}
+    </select>
+    <select id="findById" resultMap="newsMap">
+        select *from news where newsid = #{id}
+    </select>
+    <insert id="insert" parameterType="com.teskinfly.littlenewskr.domain.News">
+        insert into news (menuid,poster,title,content,add_date)values (#{menuId},#{poster},#{title},#{content},#{addDate})
+    </insert>
+    <delete id="delAll">
+        delete from news where 1=1
+    </delete>
+</mapper>

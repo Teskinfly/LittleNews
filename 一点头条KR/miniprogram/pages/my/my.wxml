@@ -1,0 +1,38 @@
+<view class="container">
+    <view id="head">
+        <block wx:if="{{isLogin}}">
+            <view class="infoShow">
+                <image src="{{myInfo.src}}" class="myImg"></image>
+            </view>
+            <view class="name">
+                    <text class="myText">{{myInfo.nickName}}</text>
+            </view>
+            <view class="weather">
+                <picker mode="region" bindchange="regionChange">
+                    <view class="region">
+                        {{region}}
+                    </view>
+                </picker>
+                <text >{{now.tmp}}℃ {{now.cond_txt}}</text>
+            </view>
+        </block>
+        <view class="login"  wx:else>
+            <button open-type="getUserInfo" bindgetuserinfo="getMyInfo">
+                <text >点击登录</text>
+            </button> 
+        </view>
+    </view>
+    <view id="view">
+        <block wx:for="{{myData}}" 
+        wx:key="view{{index}}">
+            <button class="item" bindtap='toNewsList' data-item='{{index}}'>
+                <image src="{{item.src}}"><text>{{item.name}}</text></image>
+            </button>
+        </block>
+        <button class="ke-fu" open-type="contact" bindcontact="handleContact">
+             <image class="kefu-img" src="/images/my/kefu.png">
+                <text>客服</text>
+             </image>
+        </button>
+    </view>
+</view>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.teskinfly.littlenewskr.mapper.TopicsMapper">
+    <select id="findById" resultType="com.teskinfly.littlenewskr.domain.Topics">
+        select *from topics where sid = #{id}
+    </select>
+    <select id="findByLevel" resultType="com.teskinfly.littlenewskr.domain.Topics">
+        select *from topics as t order by t.hotLevel desc limit #{page}, #{size}
+    </select>
+    <insert id="insert">
+        insert into topics (content,addDay,discussNum,hotLevel,img,openid,title)
+        values
+        (#{content},#{addDay},#{discussNum},#{hotLevel},#{img},#{openid},#{title})
+    </insert>
+    <delete id="delById" >
+        delete from topics where sid = #{id}
+    </delete>
+    <select id="findByOpenid" resultType="com.teskinfly.littlenewskr.domain.Topics">
+        select *from topics where openid = #{openid} order by addDay
+    </select>
+    <select id="findByDate" resultType="com.teskinfly.littlenewskr.domain.Topics">
+        select *from topics order by addDay limit #{page},#{size}
+    </select>
+    <select id="getTotal" resultType="String" >
+        select count(*) from topics where openid = #{openid}
+    </select>
+
+</mapper>

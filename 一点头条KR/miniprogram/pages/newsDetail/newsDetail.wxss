@@ -1,0 +1,18 @@
+.container .title {
+  font-size: xx-large;
+  text-align: center;
+}
+.container .img image {
+  width: 100%;
+}
+.container .content {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 5rpx 5rpx 5rpx 5rpx;
+}
+.container .date {
+  text-align: right;
+}
+.container .treasure {
+  color: wheat;
+  background-color: #328EE8;
+}

@@ -1,0 +1,15 @@
+.newsList .item {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1rpx solid gray;
+}
+.newsList .item image {
+  width: 230rpx;
+  height: 150rpx;
+  margin: 10rpx;
+}
+.newsList .item text {
+  width: 100%;
+  line-height: 60rpx;
+  font-size: 10pt;
+}

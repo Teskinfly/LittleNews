@@ -1,0 +1,13 @@
+<view >
+    <view class="newsList">
+        <view class="title">
+            你的收藏（{{newsList.length}}）
+        </view>
+        <view class="item" 
+        wx:for="{{newsList}}"
+         wx:key="newsItem{{index}}" bindtap="goToDetail" data-item="{{item.newsId}}"  >
+            <image src="{{item.poster}}"></image>
+            <text>{{item.title}}</text>
+        </view>
+    </view>
+</view>

@@ -1,0 +1,60 @@
+<view class="container">
+    <view class="search_input">
+        <form bindsubmit="search">
+            <input 
+            type="text"
+            maxlength="5"
+            name='keyword'
+            placeholder="请输入关键字"
+            />
+            <!-- <button form-type="submit">检索</button> -->
+            <button form-type="submit" size="mini"><image src="../../images/search.png" /></button>
+        </form>
+        
+    </view>
+    <view class="select">
+        <view class="item {{currentIndex == 0?'active':''}}" 
+        data-item='0' 
+        bindtap='getItems'>
+            今日热议
+        </view>
+        <text >/</text>
+        <view class="item {{currentIndex == 1?'active':''}}" 
+        data-item='1' 
+        bindtap='getItems'>
+            我的讨论
+        </view>
+        <text >/</text>
+        <view class="item {{currentIndex == 2?'active':''}}" 
+        data-item='2' 
+        bindtap='getItems'>
+            最新讨论
+        </view>
+    </view>
+    <block wx:if="{{currentIndex == 1}}">
+        <text >总数：{{cnt}}</text>
+        <button class="newDis" bindtap="navToCreate">新建话题</button>
+    </block>
+    <view class="hotList" wx:for="{{list}}"
+        wx:key="mylist{{index}}"
+    >
+        <view class="hotItem" bindtap='goToDiscuss' data-item='{{item.tid}}'>
+            <!-- <text>{{item.sid}}</text> -->
+            <!-- <text class="title">{{item.title}}</text> -->
+            <!-- <text style='color:red'>hi</text> -->
+            <!-- {{item.title}} -->
+            <view class="title"><rich-text nodes="{{item.title}}"></rich-text></view>
+            <text class="discuss">{{item.discussNum}}</text>
+            <block wx:if="{{item.hotLevel == 3}}">
+                <image src="/images/hot/hot.png"></image>
+            </block>
+            <block wx:elif="{{item.hotLevel == 1}}">
+                <image src="/images/hot/new.png"></image>
+            </block>
+            <block wx:if="{{currentIndex == 1}}">
+                <image src="/images/hot/delete.png" catchtap='delSubject' data-item='{{index}}' id="delImg">
+                </image>
+            </block>
+        </view>
+    </view>
+</view>

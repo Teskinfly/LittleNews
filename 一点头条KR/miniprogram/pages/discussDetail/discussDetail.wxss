@@ -1,0 +1,56 @@
+.container .head {
+  display: flex;
+  padding: 10rpx;
+  border: 2rpx solid #328EE8;
+}
+.container .head image {
+  width: 300rpx;
+  height: 200rpx;
+  border-radius: 10%;
+}
+.container .myDiscuss {
+  height: 200rpx;
+}
+.container .myDiscuss input {
+  padding: 1rpx;
+  border: 2rpx black solid;
+  height: 100rpx;
+}
+.container .views .view {
+  border: 3rpx solid #328EE8;
+}
+.container .views .view .userInfo {
+  padding: 10rpx;
+  display: flex;
+}
+.container .views .view .userInfo image {
+  height: 100rpx;
+  width: 100rpx;
+  border-radius: 50%;
+}
+.container .views .view .userInfo .name {
+  font-weight: bold;
+  padding-left: 30rpx;
+}
+.container .views .view .userInfo .date {
+  padding-left: 30rpx;
+  font-size: 35rpx;
+}
+.container .views .view .comment .gob {
+  padding: 10rpx;
+  display: flex;
+}
+.container .views .view .comment .gob .judge {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.container .views .view .comment .gob .judge image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.container .views .view .comment .gob .judge text {
+  display: flex;
+  padding-left: 5rpx;
+  align-self: center;
+}

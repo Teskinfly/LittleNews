@@ -1,0 +1,24 @@
+<view class="container">
+    <scroll-view scroll-x class="select" enable-flex> 
+        <view class="item {{index==currentIndex?'active':''}}" 
+        wx:for="{{menuList}}"
+        wx:key="item{{index}}"
+        bindtap='choose'
+        data-item='{{item.menuId}}'
+         >
+         {{item.menuName}}
+        </view>
+    </scroll-view>
+    <view class="videoplay" wx:for="{{videos}}" 
+        wx:key="viedeo{{index}}">
+        <view class="title">{{item.title}}</view>
+        <view class="myvideo">
+            <video id ="myVideo{{index}}" controls 
+            bindplay="playVideo"
+            data-item='{{index}}'
+            title='{{item.title}}'
+            src="{{item.videoUrl}}"
+            ></video>
+        </view>
+    </view>
+</view>

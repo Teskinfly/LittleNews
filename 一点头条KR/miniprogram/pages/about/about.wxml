@@ -1,0 +1,7 @@
+<view >
+    <view class="title">这是林钦楷与刘泽荣的小程序作业</view>
+    <view class="content"> 
+        其中技术参考了周文洁的《微信小程序开发实战》一书,功能参考了微博与搜狐新闻。
+    </view>
+    <image src="https://pics.images.ac.cn/image/5eed6e05c6843.html" mode="widthFix"></image>
+</view>

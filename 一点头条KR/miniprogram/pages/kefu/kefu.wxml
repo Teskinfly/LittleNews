@@ -1,0 +1,5 @@
+<button class="ke-fu" open-type="contact" bindcontact="handleContact">
+<!-- img是你们的图片 -->
+  <image class="kefu-img" src="/pages/images/in_logo7.png"></image>
+  <view class="kf-kf">客服</view>
+</button>

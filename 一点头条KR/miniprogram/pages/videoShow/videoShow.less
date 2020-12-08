@@ -1,0 +1,39 @@
+.container{
+    .select{
+        width: 60vh;
+        height: 100rpx;
+        display: flex;
+        .item{
+            
+            flex-direction: column;
+            font-size: 20pt;
+            flex-wrap: nowrap;
+            word-break: keep-all;
+            //It's my hurt
+            padding: 15rpx;
+        }
+        .active{
+            border-bottom: 5rpx solid currentColor;
+            color:#328EE8;
+        }
+    }
+    .videoplay{
+        // background-color: green;
+        .title{
+            width: 100%;
+            font-size: 20pt;    
+            text-align: center;
+        }
+        .myvideo{
+            // background-color: red;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            video{
+                width: 100%;
+            }
+        }
+    }
+}

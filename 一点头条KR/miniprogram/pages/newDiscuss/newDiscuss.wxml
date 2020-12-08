@@ -1,0 +1,25 @@
+<view class="container">
+    <form bindsubmit="submitForm">
+        <view class="title">
+            <input type="text" 
+            placeholder="输入话题(1-20个字)" 
+            maxlength="20"
+            name='title'
+            />
+        </view>
+        <view class="content">
+            <textarea 
+            placeholder="输入内容(0-140字)" 
+            maxlength="140"
+            name='content'
+            ></textarea>
+        </view>
+        <block wx:if="{{filePath == ''}}">
+            <button bindtap="selectImage">
+                添加图片
+            </button>
+        </block>
+        <button type="warn" form-type="submit">上传内容</button>
+    </form>
+
+</view>

@@ -1,0 +1,120 @@
+{
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "setting": {
+    "urlCheck": false,
+    "es6": true,
+    "enhance": true,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "enableEngineNative": false,
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "userConfirmedBundleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": [],
+    "minifyWXSS": true,
+    "bundle": false
+  },
+  "appid": "wx059430aef5e2db0d",
+  "projectname": "%E4%B8%80%E7%82%B9%E5%A4%B4%E6%9D%A1KR",
+  "libVersion": "2.8.1",
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "id": 1,
+          "name": "pages/video/video",
+          "pathName": "pages/videoShow/videoShow",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/hot/hot",
+          "pathName": "pages/hot/hot",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/newDiscuss/newDiscuss",
+          "pathName": "pages/newDiscuss/newDiscuss",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/my/my",
+          "pathName": "pages/my/my",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/hot/hot",
+          "pathName": "pages/hot/hot",
+          "query": "id=1",
+          "scene": null
+        },
+        {
+          "id": 6,
+          "name": "pages/discussDetail/discussDetail",
+          "pathName": "pages/discussDetail/discussDetail",
+          "query": "id= QbYGUwjWhSWV8oem02WUjviUCL4IPb8mU0ymJAc1BxCBlQic",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/newsDetail/newsDetail",
+          "pathName": "pages/newsDetail/newsDetail",
+          "query": "id= QbYGUwjWhSWV8oem02WUjviUCL4IPb8mU0ymJAc1BxCBlQic",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "pages/about/about",
+          "pathName": "pages/about/about",
+          "query": "id= QbYGUwjWhSWV8oem02WUjviUCL4IPb8mU0ymJAc1BxCBlQic",
+          "scene": null
+        },
+        {
+          "name": "pages/test/test",
+          "pathName": "pages/test/test",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

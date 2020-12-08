@@ -1,0 +1,58 @@
+.container .search_input {
+  height: 100rpx;
+  padding: 30rpx;
+  background-color: #328EE8;
+}
+.container .search_input form {
+  height: 100rpx;
+  width: 100%;
+}
+.container .search_input form input {
+  background-color: whitesmoke;
+  padding: 1rpx;
+  border: 1rpx black solid;
+  height: 50rpx;
+  border-radius: 1%;
+}
+.container .search_input form button {
+  margin-top: 10rpx;
+  float: right;
+}
+.container .search_input form button image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50rpx;
+  height: 50rpx;
+}
+.container .select {
+  display: flex;
+}
+.container .select .item {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding: 10rpx 10rpx 10rpx 50rpx;
+}
+.container .select .active {
+  color: #328EE8;
+  border-bottom: 5rpx solid #328EE8;
+}
+.container .hotList .hotItem {
+  border-bottom: 1rpx solid #328EE8;
+  padding: 20rpx;
+}
+.container .hotList .hotItem .title {
+  font-size: 35rpx;
+  font-weight: bold;
+  padding: 10rpx;
+}
+.container .hotList .hotItem image {
+  width: 35rpx;
+  height: 35rpx;
+  float: right;
+}
+.container .hotList .hotItem .discuss {
+  font-size: 30rpx;
+  font-weight: lighter;
+}

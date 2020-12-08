@@ -1,0 +1,32 @@
+<view class="container">
+    <swiper indicator-dots="{{true}}" 
+    autoplay="{{true}}" 
+    interval="5000" 
+    duration="500">
+        <block wx:for="{{swiperList}}" wx:key="swiper{index}">
+            <swiper-item >
+                <image src="{{item.src}}"></image>             
+            </swiper-item>
+        </block>
+    </swiper>
+    <scroll-view scroll-x class="select" enable-flex> 
+        <view class="item {{index==currentIndex?'active':''}}" 
+        wx:for="{{menuList}}"
+        wx:key="item{{index}}"
+        bindtap='choose'
+        data-item='{{item.menuId}}'
+         >
+         {{item.menuName}}
+        </view>
+    </scroll-view>
+    <view class="newsList">
+        <view class="item" 
+        wx:for="{{newsList}}"
+         wx:key="newsItem{{index}}"
+          bindtap="goToDetail"
+           data-item="{{item.newsId}}">
+            <image src="{{item.poster}}"></image>
+            <text>{{item.title}}</text>
+        </view>
+    </view>
+</view>

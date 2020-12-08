@@ -1,0 +1,11 @@
+.title{
+    font-size: x-large;
+    font-family: 楷体;
+    text-align: center;
+}
+.content{
+    font-size: 30rpx;
+}
+image{
+    width: 100%;
+}

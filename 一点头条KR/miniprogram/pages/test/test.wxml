@@ -1,0 +1,5 @@
+<!--pages/test/test.wxml-->
+<view >
+    <text>看见</text>
+    <view bind:tap="getMessage">click me</view>
+</view>

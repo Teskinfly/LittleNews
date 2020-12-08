@@ -1,0 +1,23 @@
+.container swiper {
+  height: 400rpx;
+}
+.container swiper image {
+  width: 100%;
+  height: 100%;
+}
+.container .select {
+  width: 60vh;
+  height: 100rpx;
+  display: flex;
+}
+.container .select .item {
+  flex-direction: column;
+  font-size: 20pt;
+  flex-wrap: nowrap;
+  word-break: keep-all;
+  padding: 15rpx;
+}
+.container .select .active {
+  border-bottom: 5rpx solid currentColor;
+  color: #328EE8;
+}
