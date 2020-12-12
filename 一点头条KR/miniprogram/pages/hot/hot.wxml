@@ -1,15 +1,20 @@
 <view class="container">
     <view class="search_input">
-        <form bindsubmit="search">
+        <view bindsubmit="search" class="form">
             <input 
-            type="text"
-            maxlength="5"
-            name='keyword'
-            placeholder="请输入关键字"
+                confirm-type="search"
+                type="text"
+                maxlength="5"
+                name='keyword'
+                placeholder="请输入关键字"
             />
+            <view class="wrapper" hover-class="none" hover-stop-propagation="false">
+                <button size="mini" type="default">搜索</button>
+            </view>
+            
             <!-- <button form-type="submit">检索</button> -->
-            <button form-type="submit" size="mini"><image src="../../images/search.png" /></button>
-        </form>
+            
+        </view>
         
     </view>
     <view class="select">
