@@ -12,11 +12,11 @@
 }
 .container .select .item {
   flex-direction: column;
-  font-size: 30rpx;
+  font-size: 40rpx;
   flex-wrap: nowrap;
   word-break: keep-all;
   padding: 15rpx 15rpx 15rpx 15rpx;
-  height: 40rpx;
+  height: 50rpx;
   border-bottom: 1px solid gray;
 }
 .container .select .active {
